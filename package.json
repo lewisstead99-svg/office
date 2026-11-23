@@ -1,0 +1,15 @@
+{
+  "name": "berkeleys-office",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Berkeleys Drummond office hub: contracts (Terms of Sale) sent for e-signing",
+  "type": "module",
+  "engines": { "node": ">=22" },
+  "scripts": {
+    "start": "node server.js",
+    "test": "node --test \"test/**/*.test.js\""
+  },
+  "dependencies": {
+    "@cantoo/pdf-lib": "2.11.1"
+  }
+}
