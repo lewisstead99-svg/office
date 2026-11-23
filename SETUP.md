@@ -4,6 +4,13 @@ Berkeleys Office is the staff hub for Berkeleys Drummond. Its first section, **C
 
 Allow about an hour. Do the steps in order.
 
+> **Using a Supabase project of its own instead** (chosen 23 Nov 2026): staff get Berkeleys Office logins separate from Key Tracker. In the new project's SQL Editor, run `SETUP-STAFF.sql` first, then `SETUP-SUPABASE.sql`. Then:
+> - Authentication → Sign In / Providers → turn **off** "Allow new users to sign up".
+> - Authentication → Users → **Add user** → Create new user (tick auto-confirm) for each member of staff.
+> - Add each one to the staff list with the `insert` line at the bottom of `SETUP-STAFF.sql`.
+>
+> Skip steps 1–3 below, and use the new project's URL and service_role key in step 5.
+
 ## 1. Check Key Tracker's database first
 
 In Supabase, open Key Tracker's project → Project Settings → API. Copy the **Project URL** and the **service_role** key (keep it secret). Then, in this folder on your Mac:
